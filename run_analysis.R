@@ -10,6 +10,7 @@ date() # "Sun Jun 22 10:20:32 2014"
 ##
 
 library(data.table)
+
 features <- # 561 observations of 2 variables
   fread("UCI HAR Dataset\\features.txt", header=FALSE)
 setnames(features, 1:2, c("feature_column_index", "feature_name"))
@@ -92,7 +93,6 @@ trainAndTest <- cbind(trainAndTest, isTestData)
 ## 2. Extract only the measurements on the mean and standard deviation for each
 ## measurement
 ##
-
 
 meanAndStdColNums <- grep("mean|std", features$feature_name, ignore.case = TRUE)
 keptFeatureNames <- features$feature_name[meanAndStdColNums]
