@@ -25,6 +25,7 @@ CODE BOOK (tidydata.csv)
 ---------
 
 Column|Name|Description
+------|----|-----------
 1|activity|Activity being performed during measurement: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, or LAYING
 2|subject|The subject being measured, a number between 1 and 30
 3|isTestData|Was the subject a training subject or a test subject? TRUE (test subject) or FALSE (training subject)
