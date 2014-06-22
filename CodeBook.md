@@ -115,3 +115,17 @@ Column|Name|Description
 87|angle.X.gravityMean..Avg|The angle between the mean gravity and the X axis averaged in a signal window sample, then averaged for this subject and activity
 88|angle.Y.gravityMean..Avg|The angle between the mean gravity and the Y axis averaged in a signal window sample, then averaged for this subject and activity
 89|angle.Z.gravityMean..Avg|The angle between the mean gravity and the Z axis averaged in a signal window sample, then averaged for this subject and activity
+
+DATA
+----
+The code book section above has short description of each variable. For further descriptions of the data, consult the features_info.txt file and README.txt files of the dataset found in the [Coursera dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+TRANSFORMATIONS
+---------------
+The transformations performed on the [Coursera dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) are:
+
+1. The training set, test set, subjects, and activity names were put in one [tidy dataset](http://vita.had.co.nz/papers/tidy-data.pdf) 
+2. Only means and standard deviation measurements were kept.
+3. The averages of the measurements by taken for each subject and activity.
+
+For more detailed descriptions of the steps, refer to the [README.md](https://github.com/howanu/tidy-dataset/blob/master/README.md) file.
