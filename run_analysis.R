@@ -153,4 +153,6 @@ setnames(tidydata, old=keptFeatureNames, new=avgNames)
 ##
 ## 5.c Write the tidy dataset
 ##
-write.csv(tidydata, file="tidydata.csv")
+
+# .txt suffix is required by Coursera upload
+write.csv(tidydata, file="tidydata.csv.txt") 
