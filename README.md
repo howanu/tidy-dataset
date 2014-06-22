@@ -68,3 +68,10 @@ provide clarity. The following list explains these decisions.
 7. Providing dimension checks where a mismatch might silently give incorrect results
   * The script is stopped in cases where mismatching dimensions could lead to missing or incorrect data
   * If a dimension mismatch would lead to an error, no check was done.
+
+8. "Bodybody" typos were kept.
+  * The features_info.txt file described frequency domain body measurements, but never mentioned "BOdyBody" measurements.
+  * The features.txt file contained some frequency domain measurements with "BodyBody" in the feature name
+  * The time domain had no "BodyBody" feature names, but otherwise mirrored the frequency domain.
+  * The assumption is that "Body" was meant where "BodyBody" appears.
+  * Since there is room for doubt, the "BodyBody" names were kept intact.
