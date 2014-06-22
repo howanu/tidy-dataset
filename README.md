@@ -6,6 +6,7 @@ The course project for Coursera's course on Getting and Cleaning Data. Everythin
 How the script works
 --------------------
 The run_analysis.R script is the only R script. It works as follows:  
+
 1. Merge the training and the test sets to create one data set
   * Prior to any other reads, the features are read in as a data table and legal column names are made from them. They are read in first so that dimension checks can be made on the test and training data (see decision 7 below). A check is made on the column numbers to make sure all of the columns are named, and the script stops if any are missing.
   * The training data are read in as a data table. The width of the training data are checked against the number of features and the script will stop if they aren't equal.
