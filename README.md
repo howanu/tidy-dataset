@@ -16,7 +16,7 @@ The run_analysis.R script is the only R script. It works as follows:
 
 2. Extract only the measurements on the mean and standard deviation for each measurement
   * The feature names with std or mean (case insensitive) are kept. See decision 3 below.
-  * Since I want to follow the course project's instructions in order, trainAndTest still has column names that look like "V1", "V2", and so on. To keep track of which column names are kept, I put them into a vector.
+  * To follow the course project's instructions in order, trainAndTest still has non-descriptive column names that look like "V1", "V2", and so on. To keep track of which column names are kept, they are saved in a vector.
 
 3. Use descriptive activity names to name the activities in the data set
   * Read the activity names into a data table
